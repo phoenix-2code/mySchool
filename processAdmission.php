@@ -32,6 +32,9 @@ if (isset($_POST['fullName'], $_POST['email'], $_POST['course'], $_POST['campus'
 } else {
     echo "<p style='color:red;'>Please fill in all required fields.</p>";
 }
+header("Location: admission.php?submitted=true");
+exit();
+
 ?>
     <?php
     // Include the footer file

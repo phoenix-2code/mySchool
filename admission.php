@@ -89,5 +89,30 @@ include 'includes/dbcon.php';
 
 <?php include 'includes/footer.php'; ?>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Application Success Modal -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+                <h5 class="modal-title" id="successModalLabel">Application Submitted</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Thank you! Your application has been received successfully. We will contact you via email soon.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <?php if (isset($_GET['submitted']) && $_GET['submitted'] === 'true'): ?>
+    <script>
+    const modal = new bootstrap.Modal(document.getElementById('successModal'));
+    modal.show();
+    </script>
+    <?php endif; ?>
+
 </body>
 </html>
