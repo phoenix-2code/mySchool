@@ -1,0 +1,43 @@
+/* General tweaks */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', sans-serif;
+  color: #212529;
+  line-height: 1.6;
+}
+
+h2, h3 {
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 1140px;
+}
+
+/* Navbar tweaks */
+.navbar-nav .nav-link {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  text-transform: capitalize;
+}
+
+/* Footer consistency */
+footer {
+  font-size: 0.9rem;
+}
+
+/* Custom buttons */
+.btn-primary {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+/* Forms */
+input, select, textarea {
+  border-radius: 0.3rem;
+}
